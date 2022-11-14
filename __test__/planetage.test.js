@@ -2,9 +2,11 @@ import {User} from '../src/js/planetage.js'
 
 describe('User', () => {
   let aitana;
+  let joe;
 
   beforeEach(() => {
     aitana = new User("Aitana", 25, 85);
+    let joe = new User("joe", 88, 84);
   });
 
   test("should create an object constructor with a user's name, age, and life expectancy", () => {
@@ -64,8 +66,11 @@ describe('User', () => {
     expect(aitana.getYearsLeft('jupiter')).toEqual(712);
   });
 
-  test(" if user is over the average life expectancy on Mars, getYearsLeft method should instead return the number of years lived past avg expectancy", () => {
-    let oldPerson = new User("joe", 88, 84);
-    expect(oldPerson.getYearsLeft('mercury')).toEqual(1);
+  test("if user is over the average life expectancy on Mars, getYearsLeft method should instead return the number of years lived past avg expectancy", () => {
+    expect(joe.getYearsLeft('mercury')).toEqual(1);
+  });
+
+  test("should return # of years surpassed on Venus if user's age is over their avg life expectancy", () => {
+    expect(joe.getYearsLeft('venus')).toEqual(2);
   })
 })

@@ -24,11 +24,8 @@ export class User {
       return this.expectancy * .62;
     } else if (planet === 'mars') {
       return Math.round((this.expectancy * 1.88) * 10) / 10;
+    } else if (planet === 'jupiter') {
+      return Math.round((this.expectancy * 11.86) * 10) / 10;
     }
-  }
-
-  jupiterLifeExpectancy() {
-    const jupiterLifeExp = this.expectancy * 11.86;
-    return Math.round(jupiterLifeExp * 10) / 10;
   }
 }

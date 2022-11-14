@@ -41,6 +41,9 @@ export class User {
       } else if (planet === 'venus') {
         let yearsPastExp = this.getAge('venus') - this.getLifeExpectancy('venus');
         return Math.round(yearsPastExp);
+      } else if (planet === 'mars') {
+        let yearsPastExp = this.getAge('mars') - this.getLifeExpectancy('mars');
+        return Math.round(yearsPastExp);
       }
     } else {
       let spaceAge;

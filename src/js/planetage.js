@@ -5,8 +5,8 @@ export class User {
     this.lifeExpectancy = 0;
   }
 
-  mercuryAge() {
-    return this.age * .24;
+  mercuryAge(property) {
+    return this.property * .24;
   }
 
   venusAge() {

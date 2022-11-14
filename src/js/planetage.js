@@ -5,8 +5,8 @@ export class User {
     this.lifeExpectancy = 0;
   }
 
-  mercuryAge(property) {
-    return this.property * .24;
+  mercuryAge() {
+    return this.age * .24;
   }
 
   venusAge() {
@@ -24,4 +24,9 @@ export class User {
   getLifeExpectancy(avg) {
     this.lifeExpectancy = avg;
   }
+
+  mercuryLifeExpectancy() {
+    return this.lifeExpectancy * .24;
+  }
+
 }

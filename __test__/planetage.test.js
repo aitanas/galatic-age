@@ -5,10 +5,11 @@ describe('User', () => {
 
   beforeEach(() => {
     aitana = new User("Aitana", 25);
+    aitana.getLifeExpectancy(85);
   });
 
   test("should create an object constructor with a user's name and age", () => {
-    expect(aitana).toEqual({name: "Aitana", age: 25, lifeExpectancy: 0});
+    expect(aitana).toEqual({name: "Aitana", age: 25, lifeExpectancy: 85});
   });
 
   test("should return user's age in Mercury years", () => {
@@ -28,12 +29,11 @@ describe('User', () => {
   });
 
   test("should assign the inputted user's life expectancy to property in user object", () => {
-    aitana.getLifeExpectancy(85);
     expect(aitana.lifeExpectancy).toEqual(85);
   });
 
   test("should determine the user's life expectancy on Mercury", () => {
-    expect(aitana.mercuryAge(lifeExpectancy)).toEqual(20.4);
+    expect(aitana.mercuryLifeExpectancy()).toEqual(20.4);
   });
 
 })

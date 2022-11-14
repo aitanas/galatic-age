@@ -33,7 +33,13 @@ export class User {
     }
   }
 
-  getYearsLeft() {
-
+  getYearsLeft(planet) {
+    let spaceAge;
+    let spaceExp;
+    if (planet === 'mercury') {
+      spaceAge = this.getAge('mercury');
+      spaceExp = this.getLifeExpectancy('mercury');
+      return Math.round(spaceExp - spaceAge);
+    }
   }
 }

@@ -30,7 +30,10 @@ export class User {
   }
 
   venusLifeExpectancy() {
-    
+    return this.lifeExpectancy * .62;
+  }
+
+  marsLifeExpectancy() {
   }
 
 }

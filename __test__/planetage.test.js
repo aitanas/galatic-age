@@ -40,5 +40,9 @@ describe('User', () => {
     expect(aitana.venusLifeExpectancy()).toEqual(52.7);
   });
 
+  test("should determine the user's life expectancy on Mars", () => {
+    expect(aitana.marsLifeExpectancy()).toEqual(159.8);
+  });
+
 
 })

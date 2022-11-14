@@ -84,5 +84,6 @@ describe('User', () => {
 
   test("should return 0 if invalid planet is entered into getYearsLeft method", () => {
     expect(joe.getYearsLeft('howdy')).toEqual(0);
+    expect(aitana.getYearsLeft('howdy')).toEqual(0);
   });
 })

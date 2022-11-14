@@ -6,7 +6,7 @@ describe('User', () => {
 
   beforeEach(() => {
     aitana = new User("Aitana", 25, 85);
-    let joe = new User("joe", 88, 84);
+    joe = new User("joe", 88, 84);
   });
 
   test("should create an object constructor with a user's name, age, and life expectancy", () => {

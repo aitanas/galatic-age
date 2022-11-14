@@ -38,6 +38,9 @@ export class User {
       if (planet === 'mercury') {
         let yearsPastExp = this.getAge('mercury') - this.getLifeExpectancy('mercury');
         return Math.round(yearsPastExp);
+      } else if (planet === 'venus') {
+        let yearsPastExp = this.getAge('venus') - this.getLifeExpectancy('venus');
+        return Math.round(yearsPastExp);
       }
     } else {
       let spaceAge;

@@ -20,9 +20,9 @@ To use this application, first clone it to your local machine by using the follo
 git clone https://github.com/aitanas/galatic-age.git
 ```
 Directions after cloning are as follows:
-1. Navigate to the galactic-age root directory using your terminal.
+1. Navigate to the **galactic-age root directory** using your terminal.
 2. Use the command `npm install` to install webpack, ES Lint, Babel, and Jest.
-3. Use the command `npm start` to build out and open server.
+3. Use the command `npm start` to build out and open page in your local browser.
 3. Enjoy!
 
 ## Known Bugs

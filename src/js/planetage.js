@@ -21,6 +21,6 @@ export class User {
   }
 
   lifeExpectancy(avg) {
-    return avg;
+    this.lifeExpectancy = avg;
   }
 }

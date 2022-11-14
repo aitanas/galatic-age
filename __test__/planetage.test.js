@@ -46,6 +46,9 @@ describe('User', () => {
   test("should return 0 if an invalid input is called into a method", () => {
     expect(aitana.getAge('hello')).toEqual(0);
     expect(aitana.getLifeExpectancy('hi')).toEqual(0);
-  })
+  });
 
+  test("should return the number of years a user has left on mercury", () => {
+    expect(aitana.getYearsLeft('mercury')).toEqual(14.4);
+  })
 })

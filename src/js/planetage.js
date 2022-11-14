@@ -32,4 +32,8 @@ export class User {
       return 0;
     }
   }
+
+  getYearsLeft() {
+
+  }
 }

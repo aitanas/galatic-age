@@ -81,4 +81,8 @@ describe('User', () => {
   test("should return # of years surpassed on Jupiter if user's age is over their avg life expectancy", () => {
     expect(joe.getYearsLeft('jupiter')).toEqual(47);
   });
+
+  test("should return 0 if invalid planet is entered into getYearsLeft method", () => {
+    expect(joe.getYearsLeft('howdy')).toEqual(0);
+  });
 })

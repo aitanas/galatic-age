@@ -38,4 +38,7 @@ export class User {
     return Math.round(marsLifeExp * 10) / 10;
   }
 
+  jupterLifeExpectancy() {
+    
+  }
 }

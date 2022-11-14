@@ -17,6 +17,10 @@ export class User {
     }
   }
 
+  getLifeExpectancy(planet) {
+    
+  }
+
   mercuryLifeExpectancy() {
     return this.expectancy * .24;
   }

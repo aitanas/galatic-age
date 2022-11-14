@@ -34,24 +34,31 @@ export class User {
   }
 
   getYearsLeft(planet) {
-    let spaceAge;
-    let spaceExp;
-    if (planet === 'mercury') {
-      spaceAge = this.getAge('mercury');
-      spaceExp = this.getLifeExpectancy('mercury');
-      return Math.round(spaceExp - spaceAge);
-    } else if (planet === 'venus') {
-      spaceAge = this.getAge('venus');
-      spaceExp = this.getLifeExpectancy('venus');
-      return Math.round(spaceExp - spaceAge);
-    } else if (planet === 'mars') {
-      spaceAge = this.getAge('mars');
-      spaceExp = this.getLifeExpectancy('mars');
-      return Math.round(spaceExp - spaceAge);
-    } else if (planet === 'jupiter') {
-      spaceAge = this.getAge('jupiter');
-      spaceExp = this.getLifeExpectancy('jupiter');
-      return Math.round(spaceExp - spaceAge);
+    if (this.age >= this.expectancy) {
+      if (planet === 'mercury') {
+        let yearsPastExp = this.getAge('mercury') - this.getLifeExpectancy('mercury');
+        return Math.round(yearsPastExp);
+      }
+    } else {
+      let spaceAge;
+      let spaceExp;
+      if (planet === 'mercury') {
+        spaceAge = this.getAge('mercury');
+        spaceExp = this.getLifeExpectancy('mercury');
+        return Math.round(spaceExp - spaceAge);
+      } else if (planet === 'venus') {
+        spaceAge = this.getAge('venus');
+        spaceExp = this.getLifeExpectancy('venus');
+        return Math.round(spaceExp - spaceAge);
+      } else if (planet === 'mars') {
+        spaceAge = this.getAge('mars');
+        spaceExp = this.getLifeExpectancy('mars');
+        return Math.round(spaceExp - spaceAge);
+      } else if (planet === 'jupiter') {
+        spaceAge = this.getAge('jupiter');
+        spaceExp = this.getLifeExpectancy('jupiter');
+        return Math.round(spaceExp - spaceAge);
+      }
     }
   }
 }

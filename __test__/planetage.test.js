@@ -63,4 +63,9 @@ describe('User', () => {
   test("should return the approximate number of years a user has left on Jupiter", () => {
     expect(aitana.getYearsLeft('jupiter')).toEqual(712);
   });
+
+  test(" if user is over the average life expectancy on Mars, getYearsLeft method should instead return the number of years lived past avg expectancy", () => {
+    let oldPerson = new User("joe", 88, 84);
+    expect(oldPerson.getYearsLeft('mercury')).toEqual(1);
+  })
 })

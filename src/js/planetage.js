@@ -15,4 +15,8 @@ export class User {
   marsAge() {
     return this.age * 1.88;
   }
+
+  jupiterAge() {
+    
+  }
 }

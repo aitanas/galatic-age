@@ -10,11 +10,9 @@ export class User {
       return this.age * .24;
     } else if (planet === 'venus') {
       return this.age * .62;
+    } else if (planet === 'mars') {
+      return this.age * 1.88;
     }
-  }
-
-  marsAge() {
-    return this.age * 1.88;
   }
 
   jupiterAge() {

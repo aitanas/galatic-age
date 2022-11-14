@@ -14,4 +14,8 @@ describe('User', () => {
   test("should return user's age in Mercury years", () => {
     expect(aitana.mercuryAge()).toEqual(6);
   });
+
+  test("should return user's age in Venus years", () => {
+    expect(aitana.venusAge()).toEqual(15.5);
+  })
 })

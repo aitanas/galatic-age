@@ -4,4 +4,7 @@ export class User {
     this.age = age;
   }
 
+  mercuryAge() {
+    
+  }
 }

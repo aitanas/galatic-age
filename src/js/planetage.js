@@ -18,11 +18,9 @@ export class User {
   }
 
   getLifeExpectancy(planet) {
-    
-  }
-
-  mercuryLifeExpectancy() {
-    return this.expectancy * .24;
+    if (planet === 'mercury') {
+      return this.expectancy * .24;
+    }
   }
 
   venusLifeExpectancy() {

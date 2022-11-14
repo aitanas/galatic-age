@@ -40,6 +40,10 @@ export class User {
       spaceAge = this.getAge('mercury');
       spaceExp = this.getLifeExpectancy('mercury');
       return Math.round(spaceExp - spaceAge);
+    } else if (planet === 'venus') {
+      spaceAge = this.getAge('venus');
+      spaceExp = this.getLifeExpectancy('venus');
+      return Math.round(spaceExp - spaceAge);
     }
   }
 }

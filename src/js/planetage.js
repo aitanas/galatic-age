@@ -29,4 +29,8 @@ export class User {
     return this.lifeExpectancy * .24;
   }
 
+  venusLifeExpectancy() {
+    
+  }
+
 }

@@ -8,7 +8,7 @@ describe('User', () => {
   });
 
   test("should create an object constructor with a user's name and age", () => {
-    expect(aitana).toEqual({name: "Aitana", age: 25});
+    expect(aitana).toEqual({name: "Aitana", age: 25, lifeExpectancy: 0});
   });
 
   test("should return user's age in Mercury years", () => {

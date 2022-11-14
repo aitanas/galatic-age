@@ -1,12 +1,14 @@
 export class User {
-  constructor(name, age) {
+  constructor(name, age, expectancy) {
     this.name = name;
     this.age = age;
-    this.lifeExpectancy = 0;
+    this.expectancy = expectancy;
   }
 
-  mercuryAge() {
-    return this.age * .24;
+  getAge(planet) {
+    if (planet === 'mercury') {
+      return this.age * .24
+    }
   }
 
   venusAge() {
@@ -21,25 +23,21 @@ export class User {
     return this.age * 11.86;
   }
 
-  getLifeExpectancy(avg) {
-    this.lifeExpectancy = avg;
-  }
-
   mercuryLifeExpectancy() {
-    return this.lifeExpectancy * .24;
+    return this.expectancy * .24;
   }
 
   venusLifeExpectancy() {
-    return this.lifeExpectancy * .62;
+    return this.expectancy * .62;
   }
 
   marsLifeExpectancy() {
-    const marsLifeExp = this.lifeExpectancy * 1.88;
+    const marsLifeExp = this.expectancy * 1.88;
     return Math.round(marsLifeExp * 10) / 10;
   }
 
   jupiterLifeExpectancy() {
-    const jupiterLifeExp = this.lifeExpectancy * 11.86;
+    const jupiterLifeExp = this.expectancy * 11.86;
     return Math.round(jupiterLifeExp * 10) / 10;
   }
 }

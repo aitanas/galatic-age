@@ -8,11 +8,11 @@ describe('User', () => {
   });
 
   test("should create an object constructor with a user's name, age, and life expectancy", () => {
-    expect(aitana).toEqual({name: "Aitana", age: 25, lifeExpectancy: 85});
+    expect(aitana).toEqual({name: "Aitana", age: 25, expectancy: 85});
   });
 
   test("should return user's age in Mercury years", () => {
-    expect(aitana.age(mercury)).toEqual(6);
+    expect(aitana.getAge('mercury')).toEqual(6);
   });
 
   test("should return user's age in Venus years", () => {
@@ -27,12 +27,8 @@ describe('User', () => {
     expect(aitana.jupiterAge()).toEqual(296.5);
   });
 
-  test("should assign the inputted user's life expectancy to property in user object", () => {
-    expect(aitana.lifeExpectancy).toEqual(85);
-  });
-
   test("should determine the user's life expectancy on Mercury", () => {
-    expect(aitana.lifeExpectancy.mercury()).toEqual(20.4);
+    expect(aitana.mercuryLifeExpectancy()).toEqual(20.4);
   });
 
   test("should determine the user's life expectancy on Venus", () => {

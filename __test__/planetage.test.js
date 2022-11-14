@@ -55,4 +55,8 @@ describe('User', () => {
   test("should return the approximate number of years a user has left on Venus", () => {
     expect(aitana.getYearsLeft('venus')).toEqual(37);
   });
+
+  test("should return the approximate number of years a user has left on Mars", () => {
+    expect(aitana.getYearsLeft('mars')).toEqual(113);
+  });
 })

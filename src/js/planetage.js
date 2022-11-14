@@ -19,4 +19,8 @@ export class User {
   jupiterAge() {
     return this.age * 11.86;
   }
+
+  lifeExpectancy(avg) {
+    return avg;
+  }
 }

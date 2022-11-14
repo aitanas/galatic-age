@@ -14,6 +14,8 @@ export class User {
       return this.age * 1.88;
     } else if (planet === 'jupiter') {
       return this.age * 11.86;
+    } else {
+      return 0;
     }
   }
 
@@ -26,6 +28,8 @@ export class User {
       return Math.round((this.expectancy * 1.88) * 10) / 10;
     } else if (planet === 'jupiter') {
       return Math.round((this.expectancy * 11.86) * 10) / 10;
+    } else {
+      return 0;
     }
   }
 }

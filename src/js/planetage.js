@@ -9,6 +9,6 @@ export class User {
   }
 
   venusAge() {
-    
+    return this.age * .62
   }
 }

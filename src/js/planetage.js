@@ -20,11 +20,9 @@ export class User {
   getLifeExpectancy(planet) {
     if (planet === 'mercury') {
       return this.expectancy * .24;
+    } else if (planet === 'venus') {
+      return this.expectancy * .62;
     }
-  }
-
-  venusLifeExpectancy() {
-    return this.expectancy * .62;
   }
 
   marsLifeExpectancy() {

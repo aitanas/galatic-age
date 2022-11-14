@@ -38,7 +38,8 @@ export class User {
     return Math.round(marsLifeExp * 10) / 10;
   }
 
-  jupterLifeExpectancy() {
-    
+  jupiterLifeExpectancy() {
+    const jupiterLifeExp = this.lifeExpectancy * 11.86;
+    return Math.round(jupiterLifeExp * 10) / 10;
   }
 }

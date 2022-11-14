@@ -48,7 +48,11 @@ describe('User', () => {
     expect(aitana.getLifeExpectancy('hi')).toEqual(0);
   });
 
-  test("should return the approximate number of years a user has left on mercury", () => {
+  test("should return the approximate number of years a user has left on Mercury", () => {
     expect(aitana.getYearsLeft('mercury')).toEqual(14);
-  })
+  });
+
+  test("should return the approximate number of years a user has left on Venus", () => {
+    expect(aitana.getYearsLeft('venus')).toEqual(37);
+  });
 })

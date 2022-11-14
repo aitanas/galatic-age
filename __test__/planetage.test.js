@@ -43,4 +43,9 @@ describe('User', () => {
     expect(aitana.getLifeExpectancy('jupiter')).toEqual(1008.1);
   });
 
+  test("should return 0 if an invalid input is called into a method", () => {
+    expect(aitana.getAge('hello')).toEqual(0);
+    expect(aitana.getLifeExpectancy('hi')).toEqual(0);
+  })
+
 })

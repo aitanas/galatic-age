@@ -7,12 +7,10 @@ export class User {
 
   getAge(planet) {
     if (planet === 'mercury') {
-      return this.age * .24
+      return this.age * .24;
+    } else if (planet === 'venus') {
+      return this.age * .62;
     }
-  }
-
-  venusAge() {
-    return this.age * .62;
   }
 
   marsAge() {

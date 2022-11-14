@@ -17,6 +17,6 @@ export class User {
   }
 
   jupiterAge() {
-    
+    return this.age * 11.86;
   }
 }

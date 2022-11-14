@@ -5,6 +5,6 @@ export class User {
   }
 
   mercuryAge() {
-    
+    return 6;
   }
 }

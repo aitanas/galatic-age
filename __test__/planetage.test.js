@@ -76,5 +76,9 @@ describe('User', () => {
 
   test("should return # of years surpassed on Mars if user's age is over their avg life expectancy", () => {
     expect(joe.getYearsLeft('mars')).toEqual(8);
-  })
+  });
+
+  test("should return # of years surpassed on Jupiter if user's age is over their avg life expectancy", () => {
+    expect(joe.getYearsLeft('jupiter')).toEqual(47);
+  });
 })

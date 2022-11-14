@@ -4,16 +4,15 @@ describe('User', () => {
   let aitana;
 
   beforeEach(() => {
-    aitana = new User("Aitana", 25);
-    aitana.getLifeExpectancy(85);
+    aitana = new User("Aitana", 25, 85);
   });
 
-  test("should create an object constructor with a user's name and age", () => {
+  test("should create an object constructor with a user's name, age, and life expectancy", () => {
     expect(aitana).toEqual({name: "Aitana", age: 25, lifeExpectancy: 85});
   });
 
   test("should return user's age in Mercury years", () => {
-    expect(aitana.mercuryAge()).toEqual(6);
+    expect(aitana.age(mercury)).toEqual(6);
   });
 
   test("should return user's age in Venus years", () => {
@@ -33,7 +32,7 @@ describe('User', () => {
   });
 
   test("should determine the user's life expectancy on Mercury", () => {
-    expect(aitana.mercuryLifeExpectancy()).toEqual(20.4);
+    expect(aitana.lifeExpectancy.mercury()).toEqual(20.4);
   });
 
   test("should determine the user's life expectancy on Venus", () => {

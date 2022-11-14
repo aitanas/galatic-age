@@ -24,7 +24,7 @@ describe('User', () => {
   });
 
   test("should return user's age in Jupiter years", () => {
-    expect(aitana.jupiterAge()).toEqual(296.5);
+    expect(aitana.getAge('jupiter')).toEqual(296.5);
   });
 
   test("should determine the user's life expectancy on Mercury", () => {

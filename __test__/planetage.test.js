@@ -31,4 +31,9 @@ describe('User', () => {
     expect(aitana.lifeExpectancy(85)).toEqual(85);
   });
 
+  test("should assign the inputted user's life expectancy to property in user object", () => {
+    aitana.lifeExpectancy(85);
+    expect(aitana.lifeExpectancy).toEqual(85);
+  })
+
 })

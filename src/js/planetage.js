@@ -22,12 +22,9 @@ export class User {
       return this.expectancy * .24;
     } else if (planet === 'venus') {
       return this.expectancy * .62;
+    } else if (planet === 'mars') {
+      return Math.round((this.expectancy * 1.88) * 10) / 10;
     }
-  }
-
-  marsLifeExpectancy() {
-    const marsLifeExp = this.expectancy * 1.88;
-    return Math.round(marsLifeExp * 10) / 10;
   }
 
   jupiterLifeExpectancy() {

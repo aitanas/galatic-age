@@ -34,6 +34,8 @@ export class User {
   }
 
   marsLifeExpectancy() {
+    const marsLifeExp = this.lifeExpectancy * 1.88;
+    return Math.round(marsLifeExp * 10) / 10;
   }
 
 }

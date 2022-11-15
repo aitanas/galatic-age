@@ -26,6 +26,10 @@ git clone https://github.com/aitanas/galatic-age.git
 3. Use the command `npm start` to package and open project in your local browser.
 4. Enjoy!
 
+**Notes**
+* ESlint may be used with the command `npm run lint`.
+* Jest may be used to run tests using command `npm test`.
+
 ## Known Bugs
 
 * UI does not print out the value of the checked planet.

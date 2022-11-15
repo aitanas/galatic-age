@@ -27,7 +27,7 @@ Directions after cloning are as follows:
 
 ## Known Bugs
 
-* None at the moment.
+* UI does not print out the value of the checked planet.
 
 ## License
 

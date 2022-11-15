@@ -8,15 +8,7 @@ function handleResults(e) {
   const nameInput = document.getElementById("name").value;
   const ageInput = document.getElementById("age").value;
   const expectancyInput = document.getElementById("expectancy").value;
-  const planetInput = document.querySelector("input[name='planet']:checked");
-  let planetInputArr = Array.from(planetInput);
-  const planetArr = [];
-  planetInputArr.forEach(function(element) {
-    planetArr.push(element.value);
-  });
-
-  const planet = String(planetArr);
-
+  const planet = document.querySelector("input[name='planet']:checked").value;
   const paragraph = document.createElement("p");
   const h2 = document.createElement("h2");
 

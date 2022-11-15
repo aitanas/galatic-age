@@ -1,7 +1,7 @@
 # Super Galactic Age Calculator
 ### An application by Aitana Shough
 
-###### Super Galactic Age Calculator is a JavaScript application that converts a user's Earth age to their solar age on Mercury, Venus, Mars, or Jupiter. It also converts the average lifespan of said user to determine how many years left on a given planet said user has. This program was created for an Epicodus independent project.
+##### Super Galactic Age Calculator is a JavaScript application that converts a user's Earth age to their solar age on Mercury, Venus, Mars, or Jupiter. It also converts the average lifespan of said user to determine how many years left on a given planet said user has. This program was created for an Epicodus independent project.
 
 ## Technologies Used
 
@@ -15,15 +15,16 @@
 
 ## Setup/Installation Requirements
 
-To use this application, first clone it to your local machine by using the following command:
+To use this application, clone it to your local machine by using the following command:
 ```
 git clone https://github.com/aitanas/galatic-age.git
 ```
-Directions after cloning are as follows:
+
+**Directions after cloning are as follows:**
 1. Navigate to the **galactic-age root directory** using your terminal.
 2. Use the command `npm install` to install webpack, ES Lint, Babel, and Jest.
-3. Use the command `npm start` to build out and open page in your local browser.
-3. Enjoy!
+3. Use the command `npm start` to package and open project in your local browser.
+4. Enjoy!
 
 ## Known Bugs
 
